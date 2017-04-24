@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.frank.myapplication.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pico y Placa Pasto"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_weight="0.03" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:drawable/toast_frame"
+        android:text=" #-# "
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="46sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:text="Mi placa: "
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_placa"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/progress_horizontal"
+        android:text="  "
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:text="Próximo día de Pico y Placa"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_proximo_dia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:onClick="configuracion"
+        android:text="Configurar" />
+
+</LinearLayout>
